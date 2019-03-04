@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: one
+  in: 1.5
+  out: MyString
+  float: MyString
+  tempo: 1.5
+  volume: 1.5
+
+two:
+  url: two
+  in: 1.5
+  out: MyString
+  float: MyString
+  tempo: 1.5
+  volume: 1.5
