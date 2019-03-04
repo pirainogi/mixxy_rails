@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_03_03_193613) do
 
   create_table "tracks", force: :cascade do |t|
     t.bigint "url_id"
+    t.bigint "song_id"
     t.integer "track_number"
     t.float "in"
     t.float "out"
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_03_03_193613) do
     t.float "pitch"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["song_id"], name: "index_tracks_on_song_id"
     t.index ["url_id"], name: "index_tracks_on_url_id"
   end
 
@@ -43,5 +45,6 @@ ActiveRecord::Schema.define(version: 2019_03_03_193613) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "tracks", "songs"
   add_foreign_key "tracks", "urls"
 end
