@@ -5,4 +5,9 @@ class Api::V1::UrlsController < ApplicationController
    render json: @urls
   end
 
+  def show
+    @url = Url.find(params[:id])
+    render json: @url, status: :ok
+  end
+
 end

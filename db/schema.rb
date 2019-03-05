@@ -10,21 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_03_193613) do
+ActiveRecord::Schema.define(version: 2019_03_05_165829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "songs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "songtracks", force: :cascade do |t|
+    t.bigint "song_id"
     t.bigint "track_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["track_id"], name: "index_songs_on_track_id"
+    t.index ["song_id"], name: "index_songtracks_on_song_id"
+    t.index ["track_id"], name: "index_songtracks_on_track_id"
   end
 
   create_table "tracks", force: :cascade do |t|
+    t.string "name"
     t.bigint "url_id"
-    t.bigint "song_id"
     t.integer "track_number"
     t.float "in"
     t.float "out"
@@ -33,18 +41,19 @@ ActiveRecord::Schema.define(version: 2019_03_03_193613) do
     t.float "pitch"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["song_id"], name: "index_tracks_on_song_id"
     t.index ["url_id"], name: "index_tracks_on_url_id"
   end
 
   create_table "urls", force: :cascade do |t|
     t.string "link"
+    t.integer "length"
     t.string "name"
     t.string "desc"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "tracks", "songs"
+  add_foreign_key "songtracks", "songs"
+  add_foreign_key "songtracks", "tracks"
   add_foreign_key "tracks", "urls"
 end
