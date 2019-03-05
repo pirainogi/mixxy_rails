@@ -1,4 +1,4 @@
 class Songtrack < ApplicationRecord
-  has_many :songs
-  has_many :tracks
+  belongs_to :song
+  belongs_to :track
 end

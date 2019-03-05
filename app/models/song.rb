@@ -3,7 +3,8 @@ class Song < ApplicationRecord
   # has_one :track2, :class_name => 'Track'
   # has_one :track3, :class_name => 'Track'
   # has_one :track4, :class_name => 'Track'
-
-  belongs_to :songtrack, required: false 
+  # , required: false
+  has_many :songtracks
+  has_many :tracks, through: :songtracks
 
 end
