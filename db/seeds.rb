@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "deleting seeds"
+# puts "deleting seeds"
 
 
 Songtrack.destroy_all
@@ -19,9 +19,9 @@ Url.destroy_all
 
 puts "making 0 songs"
 #
-# Song.create(name: "song1")
-# Song.create(name: "song2")
-# Song.create(name: "song3")
+Song.create(name: "song1")
+Song.create(name: "song2")
+Song.create(name: "song3")
 
 puts "#{Song.all.length} Songs"
 
@@ -58,35 +58,35 @@ puts "#{Url.all.length} Urls"
 
 puts "making 0 Tracks"
 
-# Track.create(name: "Track 1", url_id: 1, track_number: 1, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 2", url_id: 2, track_number: 2, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 3", url_id: 3, track_number: 3, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 4", url_id: 4, track_number: 4, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 5", url_id: 5, track_number: 1, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 6", url_id: 6, track_number: 2, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 7", url_id: 7, track_number: 3, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 8", url_id: 8, track_number: 4, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 9", url_id: 9, track_number: 1, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 10", url_id: 10, track_number: 2, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 11", url_id: 11, track_number: 3, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
-# Track.create(name: "Track 12", url_id: 12, track_number: 4, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 1", url_id: 1, track_number: 1, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 2", url_id: 2, track_number: 2, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 3", url_id: 3, track_number: 3, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 4", url_id: 4, track_number: 4, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 5", url_id: 5, track_number: 1, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 6", url_id: 6, track_number: 2, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 7", url_id: 7, track_number: 3, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 8", url_id: 8, track_number: 4, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 9", url_id: 9, track_number: 1, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 10", url_id: 10, track_number: 2, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 11", url_id: 11, track_number: 3, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
+Track.create(name: "Track 12", url_id: 12, track_number: 4, in: 0, out: 10, tempo: 1, volume: -20, pitch: 0)
 
 puts "#{Track.all.length} Tracks"
 
-puts "making 0 songtracks"
+puts "making songtracks"
 
-# Songtrack.create(song_id: 1, track_id: 1)
-# Songtrack.create(song_id: 1, track_id: 2)
-# Songtrack.create(song_id: 1, track_id: 3)
-# Songtrack.create(song_id: 1, track_id: 4)
-# Songtrack.create(song_id: 2, track_id: 5)
-# Songtrack.create(song_id: 2, track_id: 6)
-# Songtrack.create(song_id: 2, track_id: 7)
-# Songtrack.create(song_id: 2, track_id: 8)
-# Songtrack.create(song_id: 3, track_id: 9)
-# Songtrack.create(song_id: 3, track_id: 10)
-# Songtrack.create(song_id: 3, track_id: 11)
-# Songtrack.create(song_id: 3, track_id: 12)
+Songtrack.create(song_id: 1, track_id: 1)
+Songtrack.create(song_id: 1, track_id: 2)
+Songtrack.create(song_id: 1, track_id: 3)
+Songtrack.create(song_id: 1, track_id: 4)
+Songtrack.create(song_id: 2, track_id: 5)
+Songtrack.create(song_id: 2, track_id: 6)
+Songtrack.create(song_id: 2, track_id: 7)
+Songtrack.create(song_id: 2, track_id: 8)
+Songtrack.create(song_id: 3, track_id: 9)
+Songtrack.create(song_id: 3, track_id: 10)
+Songtrack.create(song_id: 3, track_id: 11)
+Songtrack.create(song_id: 3, track_id: 12)
 
 puts "#{Songtrack.all.length} Songtracks"
 
