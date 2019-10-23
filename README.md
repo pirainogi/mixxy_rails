@@ -4,6 +4,8 @@ Developed by [Gabbie Piraino](https://github.com/pirainogi) and [Daniel Fries](h
 
 Mixlr allows users to remix up to four audio samples to dynamically create and save multi-layered tracks within the web application. 
 
+### Mixlr has been deployed on Heroku and Netlify. You can see the demo version of this application at [https://mixlr.netlify.com/](https://mixlr.netlify.com/). This live backend can be accessed on [Heroku](https://mixlr.herokuapp.com), though please be aware that you need to navigate to a specific route in order to review the JSON data ([example available here](https://mixlr.herokuapp.com/api/v1/songs)).
+
 ## Built With
 
 * Ruby on Rails
