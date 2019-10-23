@@ -13,13 +13,13 @@ Mixlr allows users to remix up to four audio samples to dynamically create and s
 * HTML5 and CSS3 (semi-responsive)
 * PostgreSQL Database 
 
-Please find the React frontend repo [here](https://github.com/dwfig/mixxy_react).
+### Please find the React frontend repo [here](https://github.com/dwfig/mixxy_react).
 
 ## Prerequisites
 
 You will need `rails` and `bundle` installed on your computer in order to run this app. You will also need PostgreSQL installed and running in order to create, migrate, and seed your local database.
 
-In order to run this app, first clone this repo down onto your local machine and navigate to that directory. Then run `bundle install` in order to install all of the necessary gems locally. **If you'd like to source your own audio URLs to seed your file library differently than the options provided, we recommend `.ogg` or `.wav` files. They need to be added to the `db/seeds.rb` file prior to seeding your local database.**
+In order to run this app, first clone this repo down onto your local machine and navigate to that directory. Then run `bundle install` in order to install all of the necessary gems locally. **If you'd like to source your own audio files to seed your file library differently than the options provided, we recommend links to `.ogg` or `.wav` files. They need to be added to the `db/seeds.rb` file prior to seeding your local database.**
 
 * `rails db:create`
 * `rails db:migrate`
