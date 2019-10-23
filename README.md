@@ -10,8 +10,8 @@ Mixlr allows users to remix up to four audio samples to dynamically create and s
 
 * Ruby on Rails
 * React.js
-* Javascript
 * Tone.js 
+* Javascript
 * HTML5 and CSS3 (semi-responsive)
 * PostgreSQL Database 
 
