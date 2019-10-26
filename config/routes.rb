@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :urls, only: [:index, :show]
       resources :songs
-      resources :tracks
-      resources :songtracks
+      resources :tracks, only: [:index, :show, :new, :create, :edit, :update]
+      resources :songtracks, only: [:index, :show, :new, :create, :edit, :update]
     end
   end
 end

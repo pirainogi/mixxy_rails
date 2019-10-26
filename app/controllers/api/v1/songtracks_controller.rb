@@ -27,11 +27,11 @@ class Api::V1::SongtracksController < ApplicationController
     @songtrack.update(song_params)
   end
 
-  def destroy 
-    @songtrack = Songtrack.find(params[:id])
-    @songtrack.destroy
-    render json: @songtrack
-  end
+  # def destroy 
+  #   @songtrack = Songtrack.find(params[:id])
+  #   @songtrack.destroy
+  #   render json: @songtrack
+  # end
 
   private
 
