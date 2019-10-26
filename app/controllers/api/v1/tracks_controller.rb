@@ -27,6 +27,12 @@ class Api::V1::TracksController < ApplicationController
     @track.update(song_params)
   end
 
+  def destroy 
+    @track = Track.find(params[:id])
+    @track.destroy
+    render json: @track
+  end
+
   private
 
   def track_params

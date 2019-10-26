@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :urls, only: [:index, :show]
-      resources :songs, only: [:index, :show, :new, :create, :edit, :update]
-      resources :tracks, only: [:index, :show, :new, :create, :edit, :update]
-      resources :songtracks, only: [:index, :show, :new, :create, :edit, :update]
+      resources :songs
+      resources :tracks
+      resources :songtracks
     end
   end
 end
